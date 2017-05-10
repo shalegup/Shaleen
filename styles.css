@@ -1,0 +1,477 @@
+@charset "UTF-8";
+
+/* Global */
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background: #dbecf1;
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+body {
+	background: #e6f4f8;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+a,
+a:visited {
+	color: inherit;
+}
+
+
+h1 {
+	font-weight: 200;
+	font-size: 57px;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 22%;
+}
+
+h2 {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 36px;
+	letter-spacing: .08em;
+	line-height: 1;
+	margin-bottom: 23px;
+}
+
+h3 {
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	margin-bottom: 26%;
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.button {
+	display: inline-block;
+	border: 2px solid white;
+	padding: 8px 30px;
+	font-size: 16px;
+	border-radius: 30px;
+	text-decoration: none;
+}
+.button:hover {
+	background: white;
+	color: #2d2d35;
+}
+
+p {
+	font-weight: 200;
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 35px;
+}
+
+
+
+/* Header */
+
+header {
+	padding: 6% 6% 0 6%;
+}
+
+.site-logo {
+  display: block;
+  margin: 0 auto 5%;
+  width: 150px;
+}
+
+.site-nav {
+	margin-bottom: 16px;;
+}
+.site-nav ul {
+	list-style-type: none;
+}
+.site-nav ul li {
+}
+.site-nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	opacity: .75;
+	text-align: center;
+	display: block;
+	padding: 8px;
+}
+.site-nav ul li a:hover,
+.site-nav ul li a:focus {
+	opacity: 1;
+}
+
+
+
+/* Main Content */
+main {
+
+}
+
+
+.hero {
+	color: white;
+	text-align: center;
+	background: url(hero.jpg);
+	background-size: cover;
+	padding: 5% 5% 7% 5%;
+}
+
+.info-box {
+	color: white;
+	text-align: center;
+	padding: 17% 15%;
+}
+
+.info-box-tan {
+	background: #b9a88e;
+}
+.info-box-tan .button:hover {
+	color: #b9a88e;
+}
+
+.info-box-dark {
+	background: #2d2d35;
+}
+
+/* Footer */
+
+footer {
+	padding: 6%;
+    background: #dbecf1;
+}
+
+.footer-nav {margin-bottom: 17%;}
+
+.footer-nav ul {
+	text-align: center;
+	list-style-type: none;
+}
+
+.footer-nav ul li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.footer-nav ul li a {
+	color: #000000;
+	opacity: .75;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.footer-nav ul li  a:hover,
+.footer-nav ul li  a:focus {
+	opacity: 1;
+}
+
+.footer-nav ul li  a img {
+	width: auto;
+}
+
+.footer-social {
+	list-style-type: none;
+	text-align: center;
+	margin-bottom: 16%;
+}
+.footer-social li {
+	display: inline-block;
+	padding: 0 7.5%;
+}
+
+.footer-social li a img {
+	width: auto;
+}
+
+.footer-disclaimer {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: #708287;
+    text-align: center;
+}
+
+.footer-credit {
+	font-size: 14px;
+	font-weight: 400;
+  line-height: 1.2;
+	color: #708287;
+	text-align: center;
+}
+
+.footer-credit a {
+	color: #2f323a;
+}
+.footer-credit a:hover {
+	text-decoration: none;
+}
+
+/* Grid System */
+.col {
+	width: 100%;
+}
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+
+/* Responsive */
+
+@media (min-width: 768px){
+h1 {
+	font-size: 40px;
+	margin-bottom: 90px;
+}
+h2 {
+	margin-bottom: 16px;
+}
+h3 {
+	margin-bottom: 86px;
+}
+p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+.button {
+	font-size: 14px;
+	padding: 8px 22px;
+}
+.col {
+	padding: 0 7px 14px;
+	float: left;
+}
+.col-md-one-half {
+	width: 50%;
+}
+header,
+main,
+.container {
+	margin: 0 auto;
+	max-width: 776px;
+}
+header {
+	padding: 30px 0;
+}
+.site-logo {
+	margin-bottom: 20px;
+}
+.site-nav {
+	margin-bottom: 8px;
+}
+.site-nav ul {
+	text-align: center;
+}
+.site-nav ul li {
+	display: inline-block;
+	padding: 0 10px;
+}
+.site-nav ul li a {
+	padding: 0;
+}
+
+.hero {
+	padding: 25px 20px 40px;
+}
+.info-box {
+	padding: 117px 10px 105px;
+}
+.info-box p {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 300px;
+}
+footer {
+	padding-top: 30px;
+}
+.footer-nav {
+	margin-bottom: 35px;
+}
+.footer-social {
+	margin-bottom: 36px;
+}
+.footer-social li {
+	padding: 0 22px;
+}
+.footer-social li a img {
+	height: 20px;
+	width: auto;
+}
+.footer-disclaimer {
+  font-weight: 200;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+.footer-credit {
+  font-weight: 200;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+}
+
+@media (min-width: 1024px){
+.col-lg-one-fourth {
+	width: 25%;
+}
+h1 {
+    font-size: 66px;
+    margin-bottom: 112px;
+}
+h2 {
+	font-size: 32px;
+	margin-bottom: 14px;
+}
+h3 {
+	margin-bottom: 118px;
+}
+h4 {
+	margin-bottom: 13px;
+}
+p {
+	font-size: 20px;
+	line-height: 1.35;
+	margin-bottom: 27px;
+}
+header,
+main,
+.container {
+	margin: 0 auto;
+	max-width: 1260px;
+}
+header {
+	padding: 38px 7px 82px;
+}
+.site-logo {
+	float: left;
+	width: 190px;
+}
+.site-nav {
+	float: right;
+}
+.site-nav ul li {
+	padding: 10px 0 0 20px;
+}
+.site-nav ul li a {
+	font-size: 17px;
+}
+
+.hero {
+	padding: 41px 100px 54px;
+}
+.info-box {
+	padding: 57px 50px 74px;
+}
+.info-box p {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 400px;
+}
+
+footer {
+	margin-top: 128px;
+	padding: 33px 45px;
+}
+.footer-nav {
+	float: left;
+	margin: 0 auto 103px 7px;
+}
+.footer-nav ul {
+	text-align: left;
+}
+.footer-nav ul li {
+	padding: 0 20px 0 0;
+}
+
+.footer-social {
+	float: right;
+
+}
+.footer-social li {
+    padding: 0 0 0 25px;
+}
+
+.footer-disclaimer {
+	clear: both;
+	float: left;
+	text-align: left;
+	max-width: 1100px;
+}
+.footer-credit {
+	float: right;
+	text-align: right;
+	margin: 15px auto 0;
+}
+
+
+
+}
+
+@media (min-width: 1800px){
+
+h1 {
+  letter-spacing: .13em;
+  margin-bottom: 195px;
+}
+h2 {
+  letter-spacing: .1em;
+}
+h3 {
+  margin-bottom: 206px;
+}
+h4 {
+  letter-spacing: .05em;
+}
+
+header,
+main,
+.container {
+margin: 0 auto;
+max-width: 1350px;
+}
+
+
+header {
+  padding: 38px 8px 20px;
+  overflow: hidden;
+}
+
+.site-logo {
+  width: 192px;
+}
+
+.hero {
+  padding: 41px 41px 46px 41px;
+}
+
+.info-box {
+  padding: 71px 50px 80px;
+}
+.footer-nav {
+	margin-bottom: 120px;
+}
+}
